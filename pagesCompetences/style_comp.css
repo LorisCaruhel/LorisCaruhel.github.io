@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'lucioleregular';
+  src: url('../font/luciole-regular-webfont.woff2') format('woff2'),
+       url('../font/luciole-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'kaushan_scriptregular';
+  src: url('../font/kaushanscript-regular-webfont.woff2') format('woff2'),
+       url('../font/kaushanscript-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  cursor: url("../images/cursor/Pointer.cur") 10 14, pointer;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background-color: #079BEE;
+}
+
+a:hover, #back-to-top:hover, button:hover, .logo:hover, .list span, .icon:hover, .MonCV:hover{
+  cursor: url("../images/cursor/link.cur") 10 14, pointer;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'lucioleregular', Arial, Helvetica, sans-serif;
+  background-color: #141414;
+  color: white;
+  height:100%;
+  width:100%;
+  position:absolute;
+  overflow-x: hidden;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+}
+
+header img{
+  width: 80px;
+  height: 50px;
+  position: fixed;
+  inset: 15px 90px;
+}
+
+button {
+  --glow-color: #079BEE;
+  --glow-spread-color: rgba(78, 193, 175, 0.781);
+  --enhanced-glow-color: #4EC1AF;
+  --btn-color: #141414;
+  border: .25em solid var(--glow-color);
+  padding: 1em 2em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 10em .25em var(--glow-color),
+         0 0 4em 1em var(--glow-spread-color),
+         inset 0 0 .50em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: fixed;
+  right: 5em;
+  top: 1em;
+  transition: all 0.3s;
+  z-index: 1000;
+ }
+ 
+ button:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+ }
+ 
+ button:active {
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
+
+.back-to-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 15px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #00c7a2;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  font-size: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Menu */
+.menu{
+  color: white;
+  display: flex;
+  position: fixed;
+  left: 17.5%;
+  list-style-type: none;
+  border-bottom: #00D5EE 1px solid;
+  border-right: #00D5EE 1px solid;
+  border-left: #00D5EE 1px solid;
+  border-radius: 10px;
+  width: 65%;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.header_index {
+  z-index: 1000;
+}
+
+.menu > li{
+  margin: 5px 50px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, rgba(16,179,119,1) 0%, rgba(0,213,238,1) 100%, rgba(0,212,255,1) 100%);
+  border-radius: 10px;
+  padding: 0px 0px;
+}
+
+/* CSS principale */
+h1 {
+  font-size: 4em;
+}
+
+.titre{
+  position: absolute;
+  top: 12vh;
+}
+
+/* Placement de l'animation 3D */
+#canvas{
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: -50;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 15em;
+  background: #00C7A2;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu_footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__item {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("../images/wave1_footer.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
