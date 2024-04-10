@@ -18,5 +18,9 @@
   "dependencies": {
     "dat.gui": "^0.7.9",
     "three": "^0.162.0"
-  }
+  },
+  "description": "Ce site est mon portfolio ou se situe la majorité de mes compétences !",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
