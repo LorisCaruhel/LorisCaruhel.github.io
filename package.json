@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -16,11 +16,9 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
+
     "dat.gui": "^0.7.9",
-    "three": "^0.162.0"
-  },
-  "description": "Ce site est mon portfolio ou se situe la majorité de mes compétences !",
-  "main": "vite.config.js",
-  "author": "",
-  "license": "ISC"
+    "three": "^0.162.0",
+    "treejs": "^0.6.2"
+  }
 }
