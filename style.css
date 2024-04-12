@@ -155,7 +155,7 @@ a{
   font-size: 5em;
   position: relative;
   top: 35vh;
-  left: 20vh;
+  left: 10vw;
   font-family: 'kaushan_scriptregular', Arial, Helvetica, sans-serif;
   order: 1;
 }
@@ -164,7 +164,7 @@ a{
   font-size: 2em;
   position: relative;
   top: 32vh;
-  left: 21vh;
+  left: 21vw;
   order: 1;
 }
 
@@ -184,20 +184,20 @@ a{
 
 .moi-heading{
   font-size: 2em;
-  margin-left: 35vh;
+  margin-left: 15vw;
   margin-top: 60vh;
 }
 
 .moi > ul > li{
   font-size: 1.5em;
-  margin-left: 20vh;
+  margin-left: 10vw;
   margin-top: 1vh;
   list-style-type: decimal-leading-zero;
 }
 
 .moi > ul p{
   font-size: 1em;
-  margin-left: 18vh;
+  margin-left: 10vw;
   margin-top: 2vh;
 }
 
@@ -208,7 +208,7 @@ a{
 .moi_img{
   width: 500px;
   height: 530px;
-  right: 15vh;
+  right: 5vw;
   top: 10vh;
   position: absolute;
   z-index: -1;
@@ -263,7 +263,7 @@ a{
 #scolarite > h1 {
   font-size: 4em;
   position: relative;
-  left: 85vh;
+  left: 40vw;
 }
 
 #scolarite > img{
@@ -291,25 +291,25 @@ a{
 
 #scolarite .diplome1{
   bottom: 40vh;
-  left: 10vh;
+  left: 10vw;
 }
 
 #scolarite .diplome2{
-  bottom: 52vh;
-  left: 70vh;
+  bottom: 50vh;
+  left: 40vw;
 }
 
 #scolarite .diplome3{
-  bottom: 60vh;
-  left: 130vh;
+  bottom: 50vh;
+  left: 70vw;
 }
 
 /* Expériences */
 #experiences h1{
   font-size: 4em;
   position: relative;
-  top: -5vh;
-  left: 20vh;
+  top: -8vh;
+  left: 9vw;
 }
 
 #experiences img{
@@ -397,6 +397,11 @@ a{
   background: #00D5EE;
   transform: scaleX(0);
   transform-origin: left;
+  transition: 0.5s;
+}
+
+.grisHover:hover{
+  color: #2c2b2b;
   transition: 0.5s;
 }
 
