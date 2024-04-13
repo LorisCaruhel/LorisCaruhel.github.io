@@ -164,7 +164,7 @@ a{
   font-size: 2em;
   position: relative;
   top: 32vh;
-  left: 21vw;
+  left: 11vw;
   order: 1;
 }
 
@@ -178,27 +178,24 @@ a{
 
 /* Moi */
 .moi {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
-  top: -20vh;
+  top: 25vh;
 }
 
 .moi-heading{
   font-size: 2em;
-  margin-left: 15vw;
-  margin-top: 60vh;
+
 }
 
 .moi > ul > li{
   font-size: 1.5em;
-  margin-left: 10vw;
-  margin-top: 1vh;
   list-style-type: decimal-leading-zero;
 }
 
 .moi > ul p{
   font-size: 1em;
-  margin-left: 10vw;
-  margin-top: 2vh;
 }
 
 .moi ul > div{
@@ -208,17 +205,15 @@ a{
 .moi_img{
   width: 500px;
   height: 530px;
-  right: 5vw;
-  top: 10vh;
   position: absolute;
   z-index: -1;
+  right: 0;
 }
 
 .img_futurDev {
   position: absolute;
-  right: 0;
-  top: 10vh;
   z-index: -2;
+  right: 0;
 }
 
 /* Le BUT Informatique */
@@ -228,7 +223,7 @@ a{
   height: 60vh;
   justify-content: center;
   position: relative;
-  top: -5vh;
+  top: 35vh;
 }
 
 .leBUT h2{
@@ -264,6 +259,7 @@ a{
   font-size: 4em;
   position: relative;
   left: 40vw;
+  top: 35vh;
 }
 
 #scolarite > img{
@@ -271,6 +267,7 @@ a{
   height: 60vh;
   position: relative;
   z-index: -1;
+  top: 40vh;
 }
 
 #scolarite > ul > li{
@@ -290,17 +287,18 @@ a{
 }
 
 #scolarite .diplome1{
-  bottom: 40vh;
+  position: relative;
+  bottom: 0vh;
   left: 10vw;
 }
 
 #scolarite .diplome2{
-  bottom: 50vh;
+  bottom: 10vh;
   left: 40vw;
 }
 
 #scolarite .diplome3{
-  bottom: 50vh;
+  bottom: 10vh;
   left: 70vw;
 }
 
@@ -308,14 +306,14 @@ a{
 #experiences h1{
   font-size: 4em;
   position: relative;
-  top: -8vh;
-  left: 9vw;
+  top: 8vh;
+  left: 11vw;
 }
 
 #experiences img{
   height: 30em;
   position: relative;
-  top: -20vh;
+  top: 0;
   z-index: -1;
 }
 
@@ -330,7 +328,7 @@ a{
 
 .container {
   position: relative;
-  top: -20vh; 
+  top: -10vh; 
 }
 
 /* Compétences */
@@ -341,14 +339,19 @@ a{
   height:25em;
   justify-content: center;
   font-size: 2.5em;
+  top: 15vh;
+  left: 5vw;
 }
 
 .competences-heading{
-  margin: 1em 2em;
+  position: relative;
+  left: 8vw;
 }
 
 .list {
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .list h2 {
@@ -404,7 +407,6 @@ a{
   color: #2c2b2b;
   transition: 0.5s;
 }
-
 
 
 /* Placement de l'animation 3D */
