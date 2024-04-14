@@ -184,37 +184,47 @@ a{
   top: 25vh;
 }
 
-.moi-heading{
-  font-size: 2em;
-
+.iut:hover {
+  color: #00C7A2;
 }
 
-.moi > ul > li{
+.moi-heading {
+  font-size: 2em;
+  position: relative;
+  left: 15vw;
+}
+
+.moi > ul > li {
   font-size: 1.5em;
   list-style-type: decimal-leading-zero;
 }
 
-.moi > ul p{
+.moi p {
   font-size: 1em;
+  margin-left: 2vw;
 }
 
-.moi ul > div{
+.moi div {
+  flex: 1 1 50%; 
   width: 750px;
+  position: relative;
 }
 
-.moi_img{
-  width: 500px;
-  height: 530px;
+.moi_img {
+  max-width: 100%; 
+  height: 500px;
   position: absolute;
-  z-index: -1;
-  right: 0;
+  right: 10vw;
+  z-index: 5;
 }
 
 .img_futurDev {
+  width: 48vw;
+  height: 500px;
   position: absolute;
-  z-index: -2;
   right: 0;
 }
+
 
 /* Le BUT Informatique */
 #leBUT {
@@ -306,7 +316,7 @@ a{
 #experiences h1{
   font-size: 4em;
   position: relative;
-  top: 8vh;
+  top: 15vh;
   left: 11vw;
 }
 
@@ -328,7 +338,6 @@ a{
 
 .container {
   position: relative;
-  top: -10vh; 
 }
 
 /* Compétences */
@@ -418,7 +427,7 @@ a{
 }
 
 /* Footer */
-.footer {
+footer {
   position: relative;
   width: 100%;
   height: 15em;

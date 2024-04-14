@@ -29,6 +29,10 @@ a:hover, #back-to-top:hover, button:hover, .logo:hover, .list span, .icon:hover,
   cursor: url("../images/cursor/link.cur") 10 14, pointer;
 }
 
+a, #back-to-top, button, .logo, .list span, .icon, .MonCV{
+  z-index: 1000;
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -39,8 +43,9 @@ body{
   color: white;
   height:100%;
   width:100%;
-  position:absolute;
+  position:relative;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 header{
@@ -146,13 +151,54 @@ a{
 }
 
 /* CSS principale */
-h1 {
-  font-size: 4em;
+.projet{
+  margin-top: 5vh;
 }
 
-.titre{
-  position: absolute;
-  top: 12vh;
+h1 {
+  font-size: 4em;
+  position: relative;
+  left: 35vw;
+}
+
+.projet > p{
+  position: relative;
+  width: 50vw;
+  left: 25vw;
+  text-align: center;
+}
+
+.container {
+  width: 60%;
+  margin: 2rem auto; 
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 1.5rem; 
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; 
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.gallery__item--2 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
 }
 
 /* Placement de l'animation 3D */
@@ -164,7 +210,7 @@ h1 {
 }
 
 /* Footer */
-.footer {
+footer {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -219,7 +265,7 @@ h1 {
   opacity: 1;
 }
 
-.footer p {
+footer p {
   color: #fff;
   margin: 15px 0 10px 0;
   font-size: 1rem;

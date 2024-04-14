@@ -29,17 +29,34 @@
     </header>
     
     <main>
-        <section>
-            <article>
-                <h1>SAÉ 1.01 - Sudoku</h1>
-            </article>
+        <section class="projet">
+            <h1>SAÉ 1.01 - Sudoku</h1>
+            <p>
+                Dans ce projet réalisé en langage C avec Visual Studio Code, j'ai développé un programme en mode terminal capable de lire un fichier binaire représentant une grille de sudoku et de l'afficher sur le terminal sous forme de grille. L'utilisateur avait la possibilité d'interagir avec le programme en entrant la ligne et la colonne de la case qu'il souhaitait remplir, ainsi que le chiffre qu'il voulait y placer.
+                <br><br>
+                Le programme effectuait ensuite plusieurs tests pour s'assurer de la validité de la saisie de l'utilisateur. Tout d'abord, il vérifiait si la case sélectionnée était vide, c'est-à-dire si elle ne contenait pas déjà un chiffre. Ensuite, il vérifiait si le chiffre choisi par l'utilisateur était déjà présent dans la ligne, la colonne ou le bloc 3x3 auquel appartenait la case sélectionnée.
+                <br><br>
+                Pour effectuer ces tests, le programme parcourait la grille de sudoku en mémoire et vérifiait les contraintes du jeu. En cas de succès, c'est-à-dire si la case pouvait être remplie selon les règles du sudoku, le programme mettait à jour la grille et affichait la version mise à jour sur le terminal. Si la saisie de l'utilisateur était invalide, le programme affichait un message d'erreur approprié et demandait à l'utilisateur de saisir à nouveau les coordonnées et le chiffre.
+                <br><br>
+                Ce projet combinait la manipulation de fichiers binaires, la gestion des entrées utilisateur et l'implémentation des règles du jeu de sudoku en langage C, offrant ainsi une expérience interactive et éducative pour les amateurs de jeux de logique et de programmation.
+            </p>
+            <div class="container">
+                <div class="gallery">
+                    <figure class="gallery__item gallery__item--1">
+                        <img src="imagesComp/Sudoku/code.png" alt="Gallery image 1" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item gallery__item--2">
+                        <img src="imagesComp/Sudoku/enAction.png" alt="Gallery image 2" class="gallery__img">
+                    </figure>
+                </div>
+            </div>
         </section>
 
         <div class="back-to-top" onclick="window.scrollTo(0, 0)" style="z-index: 50; border: solid black 1px;"><a>⇡</a></div>
         <canvas id="canvas"></canvas>
     </main>
     
-    <footer class="footer">
+    <footer>
         <div class="waves">
             <div class="wave" id="wave1"></div>
             <div class="wave" id="wave2"></div>
