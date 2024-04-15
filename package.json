@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages",
+    "deploy": "gh-pages -d ../LorisCaruhel.github.io",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -16,7 +16,6 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
-
     "dat.gui": "^0.7.9",
     "three": "^0.162.0",
     "treejs": "^0.6.2"

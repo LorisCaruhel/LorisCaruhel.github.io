@@ -8,6 +8,7 @@
     <!-- Lien vers fichier css et JavaScript -->
     <link rel="stylesheet" href="./style_comp.css">
     <script type="module" src="../canvas.js"></script>
+    <script>window.scrollTo(0, window.scrollY);</script>
     
     <!-- Titre de la page et icon de la page sur l'onglet -->
     <title>Portfolio</title>
@@ -30,23 +31,25 @@
     
     <main>
         <section class="projet">
-            <h1>SAÉ 1.03 - Documentation automatique</h1>
+            <h1 class="titreComp3">SAÉ 1.03 - Documentation automatique</h1>
             <p>
-                Dans ce projet réalisé en langage C avec Visual Studio Code, j'ai développé un programme en mode terminal capable de lire un fichier binaire représentant une grille de sudoku et de l'afficher sur le terminal sous forme de grille. L'utilisateur avait la possibilité d'interagir avec le programme en entrant la ligne et la colonne de la case qu'il souhaitait remplir, ainsi que le chiffre qu'il voulait y placer.
+                Dans le cadre d'un projet de groupe impliquant quatre personnes, nous avons développé un mini Doxygen en PHP. Notre objectif était de créer un script capable de parcourir un programme, d'extraire tous les commentaires pertinents et de les convertir en documentation HTML. Cette tâche impliquait un travail minutieux, car nous devions traiter différents types de commentaires, y compris ceux utilisés dans plusieurs langages de programmation.
                 <br><br>
-                Le programme effectuait ensuite plusieurs tests pour s'assurer de la validité de la saisie de l'utilisateur. Tout d'abord, il vérifiait si la case sélectionnée était vide, c'est-à-dire si elle ne contenait pas déjà un chiffre. Ensuite, il vérifiait si le chiffre choisi par l'utilisateur était déjà présent dans la ligne, la colonne ou le bloc 3x3 auquel appartenait la case sélectionnée.
+                Nous avons travaillé en collaboration pour comprendre les spécifications de Doxygen et définir une structure pour notre script PHP. En utilisant des techniques de traitement de texte et de manipulation de chaînes en PHP, nous avons réussi à extraire avec précision les commentaires du code source et à les convertir en une documentation HTML bien formatée.
                 <br><br>
-                Pour effectuer ces tests, le programme parcourait la grille de sudoku en mémoire et vérifiait les contraintes du jeu. En cas de succès, c'est-à-dire si la case pouvait être remplie selon les règles du sudoku, le programme mettait à jour la grille et affichait la version mise à jour sur le terminal. Si la saisie de l'utilisateur était invalide, le programme affichait un message d'erreur approprié et demandait à l'utilisateur de saisir à nouveau les coordonnées et le chiffre.
+                Par la suite, nous avons conçu un script Bash qui automatisait tout le processus. Ce script Bash lançait un conteneur Docker configuré avec les outils nécessaires pour convertir le HTML en PDF. En lançant simplement ce script Bash, tout le processus de génération de la documentation était exécuté automatiquement, de la conversion des commentaires en HTML à la production finale d'un fichier PDF prêt à être distribué.
                 <br><br>
-                Ce projet combinait la manipulation de fichiers binaires, la gestion des entrées utilisateur et l'implémentation des règles du jeu de sudoku en langage C, offrant ainsi une expérience interactive et éducative pour les amateurs de jeux de logique et de programmation.
-            </p>
+                Ce projet nous a permis d'appliquer nos connaissances en programmation, en traitement de texte, en utilisation de conteneurs Docker et en automatisation des tâches. En travaillant ensemble, nous avons pu surmonter des défis techniques et produire un outil utile et efficace pour générer de la documentation à partir du code source.            </p>
             <div class="container">
                 <div class="gallery">
-                    <figure class="gallery__item gallery__item--1">
-                        <img src="imagesComp/Sudoku/code.png" alt="Gallery image 1" class="gallery__img">
+                    <figure class="gallery__item comp3Img1">
+                        <img src="imagesComp/Documentation_auto/code.png" alt="Gallery image 1" class="gallery__img">
                     </figure>
-                    <figure class="gallery__item gallery__item--2">
-                        <img src="imagesComp/Sudoku/enAction.png" alt="Gallery image 2" class="gallery__img">
+                    <figure class="gallery__item comp3Img2">
+                        <img src="imagesComp/Documentation_auto/doc.png" alt="Gallery image 2" class="gallery__img">
+                    </figure>
+                    <figure class="gallery__item comp3Img3">
+                        <img src="imagesComp/Documentation_auto/enAction.png" alt="Gallery image 2" class="gallery__img">
                     </figure>
                 </div>
             </div>

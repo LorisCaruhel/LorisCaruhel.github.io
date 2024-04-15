@@ -172,7 +172,7 @@ a{
 .titreComp3{
   font-size: 4em;
   position: relative;
-  left: 35vw;
+  left: 20vw;
 }
 .titreComp4{
   font-size: 4em;
@@ -250,6 +250,28 @@ a{
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+/* Compétence 3 */
+.comp3Img1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.comp3Img2 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.comp3Img3 {
+  grid-column-start: 2;
+  grid-column-end: 8;
+  grid-row-start: 6;
   grid-row-end: 9;
 }
 

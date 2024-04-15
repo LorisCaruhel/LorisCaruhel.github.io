@@ -7,8 +7,12 @@
     
     <!-- Lien vers fichier css et JavaScript -->
     <link rel="stylesheet" href="./style.css">
+
+
     <script type="module" src="./main.js"></script>
     <script type="module" src="./canvas.js"></script>
+
+
     
     <!-- Titre de la page et icon de la page sur l'onglet -->
     <title>Portfolio</title>
@@ -16,6 +20,14 @@
 </head>
 
 <body>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+          }
+        }
+      </script>
     <header class="header_index">
         <a href="index.html">
             <img src="images/LOGO.png" alt="logo_LorisCaruhel" class="logo">
