@@ -45,6 +45,7 @@ body{
   width:100%;
   position:absolute;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 header{
@@ -265,11 +266,15 @@ a{
  }
 
 /* Ma scolarité */
+#scolarite{
+  margin-bottom: 10vh;
+}
+
 #scolarite > h1 {
   font-size: 4em;
   position: relative;
   left: 40vw;
-  top: 35vh;
+  top: 40vh;
 }
 
 #scolarite > img{

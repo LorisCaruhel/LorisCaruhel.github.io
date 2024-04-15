@@ -1,4 +1,4 @@
-window.scrollTo(0, 0)
+window.scrollTo(left)
 
 function createTypingEffect(text, elementOuEcrire, spd) {
     let i = 0;
