@@ -322,7 +322,7 @@ a{
   font-size: 4em;
   position: relative;
   top: 15vh;
-  left: 11vw;
+  left: 9vw;
 }
 
 #experiences img{
@@ -551,4 +551,8 @@ footer {
   100% {
     background-positon-x: 0px;
   }
+}
+
+.lienGihub{
+  font-size: 0.5em!important;
 }
