@@ -231,7 +231,7 @@ a{
 #leBUT {
   display: flex;
   width: 100%;
-  height: 60vh;
+  height: 50vh;
   justify-content: center;
   position: relative;
   top: 35vh;
@@ -355,6 +355,7 @@ a{
   font-size: 2.5em;
   top: 15vh;
   left: 2vw;
+  margin-bottom: 150px;
 }
 
 .competences-heading{
@@ -555,4 +556,21 @@ footer {
 
 .lienGihub{
   font-size: 0.5em!important;
+}
+
+@media screen and (max-width: 800px) {
+  #experiences h1{
+    font-size: 4em;
+    position: relative;
+    top: 11vh;
+    left: 9vw;
+  }
+
+  .moi h1 {
+    font-size: 2em; 
+  }
+
+  .moi p {
+    font-size: 0.8em;
+  }
 }
