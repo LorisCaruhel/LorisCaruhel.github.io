@@ -1,0 +1,264 @@
+{
+  "competences": [
+    {
+      "name": "Toutes les compétences",
+      "value": "toutes",
+      "bDefaut": true
+    },
+    {
+      "name": "Réaliser un développement d'application",
+      "value": "competence1",
+      "bDefaut": false
+    },
+    {
+      "name": "Optimiser des applications informatiques",
+      "value": "competence2",
+      "bDefaut": false
+    },
+    {
+      "name": "Administrer des systèmes informatiques",
+      "value": "competence3",
+      "bDefaut": false
+    },
+    {
+      "name": "Gérer des données de l'information",
+      "value": "competence4",
+      "bDefaut": false
+    },
+    {
+      "name": "Conduite de projet",
+      "value": "competence5",
+      "bDefaut": false
+    },
+    {
+      "name": "Travailler dans une équipe informatique",
+      "value": "competence6",
+      "bDefaut": false
+    }
+  ],
+  "deepLearningCompetences": ["competence1", "competence2", "competence6"],
+  "competencesCouleurs": {
+    "competence1": "#0080B6",
+    "competence2": "#FF3429",
+    "competence3": "#FFD83A",
+    "competence4": "#336D7F",
+    "competence5": "#FFA421",
+    "competence6": "#7ED957"
+  },
+  "projets": [
+    {
+      "title": "Gestion d'abonnement",
+      "description": "Ce projet consiste à <strong class=\"bold-900\">réaliser une application </strong>web de gestion d'abonnement, avec des statistiques, le prix total des abonnements à payer à la fin du mois, le prix total payé depuis le début de l'abonnement. Pour celui-ci j'ai utilisé HTML, CSS et JavaScript pour le côté front et PostgreSQL, PHP pour la gestion des données.",
+      "competences": [
+        "competence1",
+        "competence2",
+        "competence3",
+        "competence4"
+      ],
+      "languages": ["HTML", "CSS", "JavaScript", "PHP", "PostgreSQL"],
+      "type": "Projet personnel",
+      "image": {
+        "src": "./assets/images/projects/gestion_abonnement.png",
+        "alt": "Gestion d'abonnement"
+      }
+    },
+    {
+      "title": "Site touristique",
+      "description": "Ce projet consistait à <strong class=\"bold-900\">réaliser une application</strong> web dédiée au tourisme sur la Côte d’Azur. Réalisé en équipe de 7 selon la méthode Agile avec un client factice et des review, il combinait un front-end en HTML, CSS et JavaScript avec une gestion des données assurée par PHP et PostgreSQL.",
+      "competences": [
+        "competence1",
+        "competence3",
+        "competence4",
+        "competence5",
+        "competence6"
+      ],
+      "languages": ["HTML", "CSS", "JavaScript", "PHP", "PostgreSQL"],
+      "type": "Projet universitaire",
+      "image": {
+        "src": "./assets/images/projects/loarwenn.png",
+        "alt": "Site touristique"
+      }
+    },
+    {
+      "title": "IA Flappy Bird",
+      "description": "Ce projet consistait, dans un premier temps, à <strong class=\"bold-900\">reproduire le jeu Flappy Bird en Python</strong> à l’aide de la bibliothèque Pygame. Dans un second temps, il s’agissait d’y intégrer une <strong class=\"bold-900\">intelligence artificielle</strong> capable de jouer de manière autonome, en s’appuyant sur des algorithmes génétiques et des techniques d’apprentissage par renforcement.",
+      "competences": ["competence1", "competence2"],
+      "languages": ["Python"],
+      "type": "Projet personnel",
+      "image": {
+        "src": "./assets/images/projects/flappy_bird_IA.png",
+        "alt": "IA Flappy Bird"
+      }
+    },
+    {
+      "title": "Sudoku intéractif",
+      "description": "Ce projet à été <strong class=\"bold-900\">réalisé</strong> en C, consistant à <strong class=\"bold-900\">développer un jeu de Sudoku</strong> interactif dans le terminal. Le programme vérifie la validité des coups, peut résoudre n'importe quel sudoku résolvable et applique les règles du jeu. Ce projet m’a permis de renforcer mes compétences en algorithmie et en programmation structurée.",
+      "competences": ["competence1", "competence2", "competence6"],
+      "languages": ["Language C"],
+      "type": "Projet universitaire",
+      "image": {
+        "src": "./assets/images/projects/sudoku.png",
+        "alt": "Projet du sudoku"
+      }
+    },
+    {
+      "title": "Problème du cavalier",
+      "description": "Ce projet a été réalisé en Python, consistant à <strong class=\"bold-900\">résoudre le problème des cavaliers</strong> avec une interface interactive en Pygame. Le programme visualise les déplacements sur l’échiquier et génère automatiquement des solutions valides, renforçant mes compétences en algorithmique et en programmation orientée objet avec python.",
+      "competences": ["competence2", "competence6"],
+      "languages": ["Python"],
+      "type": "Projet universitaire",
+      "image": {
+        "src": "./assets/images/projects/cavalier.png",
+        "alt": "Problème du cavalier"
+      }
+    },
+    {
+      "title": "Fonctions intéractives",
+      "description": "Ce projet, en cours de développement en Rust avec deux camarades, consiste à <strong class=\"bold-900\">créer un jeu inspiré de Graphwar, intitulé Smart Graph</strong>. Il met en œuvre a manipulation de graphes et d'algorithmes d’optimisation, renforçant mes compétences en gestion de la mémoire et en conception algorithmique.",
+      "competences": ["competence1", "competence2", "competence5"],
+      "languages": ["Rust"],
+      "type": "Projet personnel",
+      "image": {
+        "src": "./assets/images/projects/smart-graph.png",
+        "alt": "Graphique de fonctions"
+      }
+    }
+  ],
+  "languagesIcons": [
+    {
+      "alt": "JavaScript",
+      "src": "./assets/icons/color/js.svg",
+      "href": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+    },
+    {
+      "alt": "TypeScript",
+      "src": "./assets/icons/color/ts.svg",
+      "href": "https://www.typescriptlang.org/"
+    },
+    {
+      "alt": "Python",
+      "src": "./assets/icons/color/python.svg",
+      "href": "https://www.python.org/"
+    },
+    {
+      "alt": "Kotlin",
+      "src": "./assets/icons/color/kotlin.svg",
+      "href": "https://kotlinlang.org/"
+    },
+    {
+      "alt": "Jetpack Compose",
+      "src": "./assets/icons/color/jetpack-compose.svg",
+      "href": "https://developer.android.com/compose"
+    },
+    {
+      "alt": "Java",
+      "src": "./assets/icons/color/java.svg",
+      "href": "https://www.java.com/fr/"
+    },
+    {
+      "alt": "PHP",
+      "src": "./assets/icons/color/php_elephant.svg",
+      "href": "https://www.php.net/"
+    },
+    {
+      "alt": "Rust",
+      "src": "./assets/icons/black/rust.svg",
+      "href": "https://rust-lang.org/fr/"
+    },
+    {
+      "alt": "PostgreSQL",
+      "src": "./assets/icons/color/postgresql.svg",
+      "href": "https://www.postgresql.org/"
+    },
+    {
+      "alt": "Language C",
+      "src": "./assets/icons/color/language_c.svg",
+      "href": "https://fr.wikipedia.org/wiki/C_(langage)"
+    },
+    {
+      "alt": "Regex",
+      "src": "./assets/icons/color/regex.svg",
+      "href": "https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re"
+    },
+    {
+      "alt": "Latex",
+      "src": "./assets/icons/color/latex.svg",
+      "href": "https://www.latex-project.org/"
+    },
+    {
+      "alt": "HTML",
+      "src": "./assets/icons/color/html.svg",
+      "href": "https://developer.mozilla.org/fr/docs/Web/HTML"
+    },
+    {
+      "alt": "CSS",
+      "src": "./assets/icons/color/css.svg",
+      "href": "https://developer.mozilla.org/fr/docs/Web/CSS"
+    },
+    {
+      "alt": "SCSS",
+      "src": "./assets/icons/color/scss.svg",
+      "href": "https://sass-lang.com/"
+    },
+    {
+      "alt": "React",
+      "src": "./assets/icons/color/react_js.svg",
+      "href": "https://fr.react.dev/"
+    },
+    {
+      "alt": "Angular",
+      "src": "./assets/icons/color/angular-js.svg",
+      "href": "https://angular.dev/"
+    },
+    {
+      "alt": "Bootstrap",
+      "src": "./assets/icons/color/bootstrap.svg",
+      "href": "https://getbootstrap.com/"
+    },
+    {
+      "alt": "Jquery",
+      "src": "./assets/icons/color/jquery.svg",
+      "href": "https://jquery.com/"
+    },
+    {
+      "alt": "Vite",
+      "src": "./assets/icons/color/vite.svg",
+      "href": "https://vite.dev/"
+    },
+    {
+      "alt": "Docker",
+      "src": "./assets/icons/color/docker.svg",
+      "href": "https://www.docker.com/"
+    },
+    {
+      "alt": "PostMan",
+      "src": "./assets/icons/color/postman.svg",
+      "href": "https://www.postman.com/"
+    },
+    {
+      "alt": "NPM",
+      "src": "./assets/icons/color/npm.svg",
+      "href": "https://www.npmjs.com/"
+    },
+    {
+      "alt": "Vs Code",
+      "src": "./assets/icons/color/vs-code.svg",
+      "href": "https://code.visualstudio.com/"
+    },
+    {
+      "alt": "IntelliJ",
+      "src": "./assets/icons/color/intelliJ.svg",
+      "href": "https://www.jetbrains.com/fr-fr/idea/"
+    },
+    {
+      "alt": "Eclipse",
+      "src": "./assets/icons/color/eclipse.svg",
+      "href": "https://eclipseide.org/"
+    },
+    {
+      "alt": "Linux",
+      "src": "./assets/icons/color/linux.svg",
+      "href": "https://fr.wikipedia.org/wiki/Linux"
+    }
+  ]
+}
