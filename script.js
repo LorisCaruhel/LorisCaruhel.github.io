@@ -70,11 +70,12 @@
           <div class="pellets-competences">${pelletsHTML}</div>
           ${bDeepLearning ? '<img class="star-corner" src="./assets/icons/color/stars.svg" alt="Stars" />' : ''}
           <div class="presentation-image-container">
-            <img class="presentation-image" src="${project.image.src}" alt="${project.image.alt}" />
+            <img class="presentation-image" src="${project.image.src}" alt="${project.image.alt}" onclick="projectImage('${project.image.src}')"/>
           </div>
           <div class="project-description">
             <h1>${project.title}</h1>
             <p>${project.description}</p>
+            <button class="read-more-btn" style="display: none;">Lire plus</button>
             <div class="footer-card">
               <div class="techno-container">${iconsHTML}</div>
               <p>${project.type}</p>
@@ -102,6 +103,26 @@
 
     // Rendu des Projets (Une seule écriture dans le DOM)
     els.projectsContainer.innerHTML = renderProjects(state.data.projets);
+
+    const cards = els.projectsContainer.querySelectorAll('.project-card');
+
+    cards.forEach(card => {
+      const textElem = card.querySelector('.project-card p');
+      const btn = card.querySelector('.read-more-btn');
+
+      setTimeout(() => {
+        if (textElem.scrollHeight > (textElem.offsetHeight + 5)) {
+          btn.style.display = 'block';
+        }
+      }, 200);
+
+      btn.addEventListener('click', () => {
+        const isExpanded = textElem.classList.toggle('expanded');
+        btn.textContent = isExpanded ? 'Réduire' : 'Lire plus';
+        card.style.height = isExpanded ? 'auto' : 'auto'; 
+      });
+    });
+
     // On cache les références aux cartes projets pour le filtrage futur
     const projectCards = Array.from(els.projectsContainer.getElementsByClassName('project-card'));
 
@@ -152,4 +173,33 @@
     document.querySelector(".footer-content p").textContent = `© ${new Date().getFullYear()} Loris CARUHEL`;
   }
   initUI();
+
+  function projectImage(src) {
+    const modalImg = document.createElement('div');
+    modalImg.classList.add('modal-image');
+    modalImg.innerHTML = `
+      <span class="close-btn">&times;</span>
+      <img class="modal-content" src="" alt="Project Image"/>
+    `;
+    document.body.appendChild(modalImg);
+
+    const imgElement = document.querySelector('.presentation-image');
+    const modalContent = modalImg.querySelector('.modal-content');
+    modalContent.src = src;
+    modalContent.alt = imgElement.alt;
+
+    const closeBtn = modalImg.querySelector('.close-btn');
+    closeBtn.onclick = function() {
+      modalImg.style.display = "none";
+      document.body.removeChild(modalImg);
+    }
+
+    modalImg.onclick = function(event) {
+      if (event.target === modalImg) {
+        modalImg.style.display = "none";
+        document.body.removeChild(modalImg);
+      }
+    }
+  }
+  window.projectImage = projectImage;
 })();
