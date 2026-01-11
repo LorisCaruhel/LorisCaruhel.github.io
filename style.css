@@ -360,32 +360,57 @@ a:hover {
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 1rem 1rem;
   border: solid 1px rgba(0, 0, 0, 0.09);
-  width: 20vw;
-  height: 60vh;
-}
-
-.project-card p {
-  color: black;
+  width: 22vw;
+  min-width: 250px;
+  min-height: 60vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-description {
   padding: 0rem 1rem;
   width: 100%;
-  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.project-card p {
+  color: black;
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto; 
 }
 
 .footer-card {
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
+  padding-top: 15px;
   display: flex;
   flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .footer-card p {
-  font-size: 0.9rem;
   font-style: italic;
-  padding-bottom: -10px;
-  padding-left: 5px;
+  margin: 0;
+  font-size: 0.85rem;
+  color: #000000;
+  -webkit-line-clamp: unset; 
+  display: block;
+  width: 100%;
+}
+
+.techno-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
 }
 
 .presentation-image-container {
@@ -416,14 +441,6 @@ a:hover {
   margin-bottom: 15px;
 }
 
-.techno-container {
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
 
 .project-card h1 {
   font-size: 1.5rem;

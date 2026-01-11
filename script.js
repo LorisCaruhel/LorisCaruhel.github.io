@@ -85,8 +85,8 @@
     }).join(""); // On joint tout en une seule string
   }
 
-  // 3. Initialisation de l'interface
   async function initUI() {
+  // 3. Initialisation de l'interface
     const dataLoaded = await initData();
     if (!dataLoaded) return;
 
@@ -148,7 +148,8 @@
         isScrolling = true;
       }
     });
-  }
 
+    document.querySelector(".footer-content p").textContent = `© ${new Date().getFullYear()} Loris CARUHEL`;
+  }
   initUI();
 })();
