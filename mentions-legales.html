@@ -21,7 +21,6 @@
             <ul class="nav-liens">
                 <li><a href="/index.html#about">À propos</a></li>
                 <li><a href="/index.html#projects">Projets</a></li>
-                <li><a href="/index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -51,19 +50,24 @@
         </section>
     </main>
 
-    <footer class="mentions-legales-footer">
-        <div class="footer-content">
-            <p>© 2025 Loris Caruhel</p>
-            <p><a href="/mentions-legales.html">Mentions légales</a></p>
-            <div class="social-icons">
-                <a href="https://github.com/LorisCaruhel">
-                    <img src="./assets/icons/white/github.svg" alt="GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/loris-caruhel/"><img src="./assets/icons/white/linkedin.svg"
-                        alt="LinkedIn" /></a>
-            </div>
-        </div>
-    </footer>
+  <footer>
+    <div class="footer-content">
+      <p></p>
+      <p><a href="/mentions-legales.html">Mentions légales</a></p>
+      <div class="social-icons">
+        <a href="https://github.com/LorisCaruhel">
+          <img src="./assets/icons/white/github.svg" alt="GitHub" />
+        </a>
+        <a href="https://www.linkedin.com/in/loris-caruhel/"><img src="./assets/icons/white/linkedin.svg"
+            alt="LinkedIn" /></a>    
+        <a href="./assets/LORIS.pdf"><img src="./assets/icons/white/cv.svg" alt="Mon CV"></a>
+        <p>loriscaruhel3@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.querySelector(".footer-content p").textContent = `© ${new Date().getFullYear()} Loris CARUHEL`;
+  </script>
 </body>
 
 </html>
