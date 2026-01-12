@@ -53,7 +53,7 @@ header::after {
   height: 150px;
   background: white;
   clip-path: ellipse(55% 50% at 50% 100%);
-  margin-bottom: -1px;
+  margin-bottom: -10px;
 }
 
 footer {
